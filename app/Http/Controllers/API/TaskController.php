@@ -94,9 +94,7 @@ class TaskController extends Controller
                 $task->status_id = $request->status_id; 
                 $task->save();
     
-                $success['name'] =  $task->name;
-    
-                return response()->json(['success' => $success, 'message'=> "Task Updated"], $this->successStatus);
+                return response()->json(['message'=> "Task Updated"], $this->successStatus);
             }else{
                 
                 return response()->json(['message' => "User Not Authorized"], 401);
