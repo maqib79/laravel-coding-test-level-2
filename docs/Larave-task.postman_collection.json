@@ -1,0 +1,1935 @@
+{
+	"info": {
+		"_postman_id": "2666daa2-0f57-4b76-aae1-91a6bb3a8bbb",
+		"name": "Larave-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get single user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|94z9KFrYb6lEI6SYUo7J8P9Js2c2g5Uws0d5CRDb",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						},
+						"description": "Get single user"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/users/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|94z9KFrYb6lEI6SYUo7J8P9Js2c2g5Uws0d5CRDb",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 18:52:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 18:52:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"asd\",\n        \"email\": \"asd@asd.asd\",\n        \"email_verified_at\": null,\n        \"role_id\": 1,\n        \"created_at\": \"2023-03-02T17:53:44.000000Z\",\n        \"updated_at\": \"2023-03-02T18:49:07.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						},
+						"description": "Get single user"
+					},
+					"response": [
+						{
+							"name": "Get all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:53:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:53:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"users\": [\n        {\n            \"id\": \"4060696d-087c-4360-8b78-e3d9138ea27b\",\n            \"name\": \"asd\",\n            \"email\": \"asd@asd.asd\",\n            \"email_verified_at\": null,\n            \"role_id\": 1,\n            \"created_at\": \"2023-03-02T19:45:10.000000Z\",\n            \"updated_at\": \"2023-03-02T19:49:24.000000Z\"\n        },\n        {\n            \"id\": \"7af2433b-a636-40a1-829d-cbd708fd1327\",\n            \"name\": \"demo\",\n            \"email\": \"demo2@email.com\",\n            \"email_verified_at\": null,\n            \"role_id\": 1,\n            \"created_at\": \"2023-03-02T19:52:44.000000Z\",\n            \"updated_at\": \"2023-03-02T19:52:44.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "User Updated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "asd",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "asd@asd.asd",
+									"type": "default"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "c_password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "role_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						},
+						"description": "update user"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/users/1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "asd",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "asd@asd.asd",
+											"type": "default"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "default"
+										},
+										{
+											"key": "c_password",
+											"value": "123456789",
+											"type": "default"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/4060696d-087c-4360-8b78-e3d9138ea27b",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"4060696d-087c-4360-8b78-e3d9138ea27b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:49:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:49:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": {\n        \"token\": \"4|8tnkyQKootNeO0TaM3VGj3KZS1jQeMuXYsleQTap\",\n        \"name\": \"asd\"\n    },\n    \"message\": \"User Updated\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "demo",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "demo@email.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123123123",
+									"type": "default"
+								},
+								{
+									"key": "c_password",
+									"value": "123123123",
+									"type": "default"
+								},
+								{
+									"key": "role_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						},
+						"description": "Create a user"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/users/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "demo",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "demo@email.com",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "123123123",
+											"type": "default"
+										},
+										{
+											"key": "c_password",
+											"value": "123123123",
+											"type": "default"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 18:56:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 18:56:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"0\": \"User Registered\",\n    \"success\": {\n        \"token\": \"4|op9EUlyAD9vCoiHSR8VLgs3gnXiA53wP7FZUZwxe\",\n        \"name\": \"demo\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "DELETE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/7044ae8e-9546-4f44-8df9-80f3c53df3ef",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"7044ae8e-9546-4f44-8df9-80f3c53df3ef"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "DELETE",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Delete a user"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/users/1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "_method",
+											"value": "DELETE",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/7044ae8e-9546-4f44-8df9-80f3c53df3ef",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"7044ae8e-9546-4f44-8df9-80f3c53df3ef"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "DELETE",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:47:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:47:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "All Projects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:36:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:36:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"projects\": [\n        {\n            \"id\": \"339adb0d-08c1-4c96-9e68-5c34eecf7253\",\n            \"name\": \"project 1\",\n            \"created_by\": \"7044ae8e-9546-4f44-8df9-80f3c53df3ef\",\n            \"created_at\": \"2023-03-02T19:35:19.000000Z\",\n            \"updated_at\": \"2023-03-02T19:35:19.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "project 1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "project 1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:35:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:35:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": {\n        \"name\": \"project 1\"\n    },\n    \"message\": \"Project Created\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "project 1x",
+									"type": "default"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/339adb0d-08c1-4c96-9e68-5c34eecf7253",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"339adb0d-08c1-4c96-9e68-5c34eecf7253"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "project 1x",
+											"type": "default"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/339adb0d-08c1-4c96-9e68-5c34eecf7253",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"339adb0d-08c1-4c96-9e68-5c34eecf7253"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:40:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:40:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"0\": \"message\",\n    \"1\": \"Project Updated\",\n    \"success\": {\n        \"name\": \"project 1x\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "project 1x",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "_method",
+									"value": "DELETE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/763556d7-94b0-4fc3-89aa-13266d2b0f5e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"763556d7-94b0-4fc3-89aa-13266d2b0f5e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 1|w8p5mhpRmQHwUPfgzqialw7WRZIRxgIfg8hK9AaW",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "project 1x",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "_method",
+											"value": "DELETE",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/763556d7-94b0-4fc3-89aa-13266d2b0f5e",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"763556d7-94b0-4fc3-89aa-13266d2b0f5e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:42:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 19:42:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project Deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Get all task",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tasks",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:48:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:48:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tasks\": [\n        {\n            \"id\": \"0514ceb4-4eb0-4241-9384-5d6296bc9e49\",\n            \"title\": \"demo title\",\n            \"description\": \"demo description\",\n            \"status_id\": 1,\n            \"project_id\": \"a06e5345-551b-486f-840c-c984b92fd800\",\n            \"user_id\": \"3fd88c8c-12f4-494f-a660-6449218d9e9e\",\n            \"created_by\": \"7af2433b-a636-40a1-829d-cbd708fd1327\",\n            \"created_at\": \"2023-03-03T17:48:37.000000Z\",\n            \"updated_at\": \"2023-03-03T17:48:37.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "demo title",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "demo description",
+									"type": "default"
+								},
+								{
+									"key": "project_id",
+									"value": "a06e5345-551b-486f-840c-c984b92fd800",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "demo title",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "demo description",
+											"type": "default"
+										},
+										{
+											"key": "project_id",
+											"value": "a06e5345-551b-486f-840c-c984b92fd800",
+											"type": "default"
+										},
+										{
+											"key": "user_id",
+											"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tasks/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:48:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:48:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": {\n        \"name\": \"demo title\"\n    },\n    \"message\": \"Task Created\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get single Task",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get single Task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:50:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:50:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"task\": {\n        \"id\": \"0514ceb4-4eb0-4241-9384-5d6296bc9e49\",\n        \"title\": \"demo title\",\n        \"description\": \"demo description\",\n        \"status_id\": 1,\n        \"project_id\": \"a06e5345-551b-486f-840c-c984b92fd800\",\n        \"user_id\": \"3fd88c8c-12f4-494f-a660-6449218d9e9e\",\n        \"created_by\": \"7af2433b-a636-40a1-829d-cbd708fd1327\",\n        \"created_at\": \"2023-03-03T17:48:37.000000Z\",\n        \"updated_at\": \"2023-03-03T17:48:37.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "demo title11",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "demo description",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "a06e5345-551b-486f-840c-c984b92fd800",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "default"
+								},
+								{
+									"key": "status_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "demo title11",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "demo description",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "a06e5345-551b-486f-840c-c984b92fd800",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "default"
+										},
+										{
+											"key": "status_id",
+											"value": "2",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:52:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:52:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": {\n        \"task\": {\n            \"id\": \"0514ceb4-4eb0-4241-9384-5d6296bc9e49\",\n            \"title\": \"demo title11\",\n            \"description\": \"demo description\",\n            \"status_id\": \"2\",\n            \"project_id\": \"a06e5345-551b-486f-840c-c984b92fd800\",\n            \"user_id\": \"3fd88c8c-12f4-494f-a660-6449218d9e9e\",\n            \"created_by\": \"7af2433b-a636-40a1-829d-cbd708fd1327\",\n            \"created_at\": \"2023-03-03T17:48:37.000000Z\",\n            \"updated_at\": \"2023-03-03T17:52:15.000000Z\"\n        }\n    },\n    \"message\": \"Task Updated\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Task Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "demo title11",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "demo description",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "project_id",
+									"value": "a06e5345-551b-486f-840c-c984b92fd800",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "_method",
+									"value": "DELETE",
+									"type": "default"
+								},
+								{
+									"key": "status_id",
+									"value": "2",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Task Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|pK3Q2KVuRaxhNq7daPTItnJ3URSXiDVGUGI5RPO7",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "demo title11",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "demo description",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "project_id",
+											"value": "a06e5345-551b-486f-840c-c984b92fd800",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "user_id",
+											"value": "3fd88c8c-12f4-494f-a660-6449218d9e9e",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "_method",
+											"value": "DELETE",
+											"type": "default"
+										},
+										{
+											"key": "status_id",
+											"value": "2",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tasks/0514ceb4-4eb0-4241-9384-5d6296bc9e49",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tasks",
+										"0514ceb4-4eb0-4241-9384-5d6296bc9e49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:53:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 17:53:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Task Deleted\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
