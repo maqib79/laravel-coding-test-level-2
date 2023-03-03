@@ -15,7 +15,21 @@ class ProjectController extends Controller
 
     public function index()
     {
-        $projects = Project::all();
+        
+        if(isset($_GET['q'])){
+            $projects = Project::where('name','like',$_GET['q']);
+        }else{
+            $projects = Project::select('*');
+
+        }
+        if(isset($_GET['sortBy'])){
+            $projects = $projects->orderBy($_GET['sortBy']);
+        }else{
+            $projects = $projects->orderBy('name','ASC');
+
+        }
+        $projects = $projects->paginate(); 
+        
         return response()->json(['projects' => $projects], $this->successStatus);
     }
 
