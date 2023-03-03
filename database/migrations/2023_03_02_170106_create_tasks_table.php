@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->uuid('id')->primary();
             $table->string('title');
             $table->string('description');
-            $table->integer('status_id')->index();
+            $table->integer('status_id')->default(1)->index();
             $table->uuid('project_id')->index();
             $table->uuid('user_id')->index();
             $table->uuid('created_by')->index();
